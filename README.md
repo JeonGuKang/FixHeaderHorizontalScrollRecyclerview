@@ -9,4 +9,4 @@
 Observer를 이용해 구현 했습니다.
 
 
-![](sample.mp4)
+![](sample.gif)

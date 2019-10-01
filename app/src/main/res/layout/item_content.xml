@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="41.2dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40.7dp"
+        android:orientation="horizontal"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_content_tv_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="13dp"
+                    android:text="제목"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/item_content_tv_sub_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="부제목"
+                    android:textSize="11dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/item_horizontal_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="40.7dp"
+            android:background="@color/color_fafafa"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:descendantFocusability="blocksDescendants">
+
+                <TextView
+                    android:id="@+id/item_content_tv_1"
+                    style="@style/ListItemContentTextView"
+                    android:layout_width="50dp"
+                    android:text="1"/>
+
+                <TextView
+                    android:id="@+id/item_content_tv_2"
+                    style="@style/ListItemContentTextView"
+                    android:layout_width="50dp"
+                    android:text="2"/>
+
+                <TextView
+                    android:id="@+id/item_content_tv_3"
+                    style="@style/ListItemContentTextView"
+                    android:layout_width="50dp"
+                    android:text="3"/>
+
+                <TextView
+                    android:id="@+id/item_content_tv_4"
+                    style="@style/ListItemContentTextView"
+                    android:layout_width="50dp"
+                    android:text="4"/>
+
+                <TextView
+                    android:id="@+id/item_content_tv_5"
+                    style="@style/ListItemContentTextView"
+                    android:layout_width="50dp"
+                    android:text="5"/>
+
+                <TextView
+                    android:id="@+id/item_content_tv_6"
+                    style="@style/ListItemContentTextView"
+                    android:layout_width="50dp"
+                    android:text="6"/>
+                <TextView
+                    android:id="@+id/item_content_tv_7"
+                    style="@style/ListItemContentTextView"
+                    android:layout_width="50dp"
+                    android:text="7"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <View
+        android:id="@+id/item_playerstat_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_e0e0e0"
+        android:visibility="visible" />
+</LinearLayout>

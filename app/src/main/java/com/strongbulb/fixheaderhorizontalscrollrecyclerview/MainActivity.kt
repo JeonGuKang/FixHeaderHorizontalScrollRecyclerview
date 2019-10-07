@@ -8,8 +8,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val adapter = CustomAdpater()
-    val testDataSize = 100
+    val adapter = CustomAdapter()
+    private val testDataSize = 1000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setTestData() {
-        val arrayList = arrayListOf<CustomAdpater.Item>()
+        val arrayList = arrayListOf<CustomAdapter.Item>()
         for(i in 0 until testDataSize) {
-            arrayList.add(CustomAdpater.Item(i))
+            arrayList.add(CustomAdapter.Item(i))
         }
         adapter.setList(arrayList)
     }

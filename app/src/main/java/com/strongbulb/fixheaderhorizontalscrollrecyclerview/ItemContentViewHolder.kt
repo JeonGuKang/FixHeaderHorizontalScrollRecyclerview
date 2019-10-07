@@ -36,7 +36,6 @@ class ItemContentViewHolder(view: View, var itemScrollData: ItemScrollData) : Re
         itemView.item_horizontal_scroll.post{ itemView.item_horizontal_scroll.scrollX = itemScrollData.scrollData.x }
     }
 
-
     inner class ScrollObserver : Observer {
         override fun update(p0: Observable?, p1: Any?) {
             itemView.item_horizontal_scroll.post{itemView.item_horizontal_scroll.scrollX = itemScrollData.scrollData.x}

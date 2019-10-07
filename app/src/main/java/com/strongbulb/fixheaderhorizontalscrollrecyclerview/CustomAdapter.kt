@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
  * Created by JeonGuKang on 2019-10-01.
  */
 
-class CustomAdpater : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class CustomAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     val itemScrollData = ItemScrollData()
     private val arrayList = arrayListOf<Item>()

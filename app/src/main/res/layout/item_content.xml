@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="41.2dp"
     android:gravity="center_vertical"
@@ -42,6 +41,7 @@
                     android:gravity="center"/>
 
             </LinearLayout>
+
         </LinearLayout>
 
         <HorizontalScrollView
@@ -100,12 +100,16 @@
                     android:text="7"/>
 
             </LinearLayout>
+
         </HorizontalScrollView>
+
     </LinearLayout>
+
     <View
         android:id="@+id/item_playerstat_line"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
         android:background="@color/color_e0e0e0"
         android:visibility="visible" />
+
 </LinearLayout>

@@ -20,7 +20,6 @@ class ItemContentViewHolder(view: View, var itemScrollData: ItemScrollData) : Re
         }
     }
 
-
     init {
         this.scrollObserver = ScrollObserver()
         itemView.item_horizontal_scroll.viewTreeObserver.addOnScrollChangedListener(onScrollChangedListener)
@@ -33,7 +32,7 @@ class ItemContentViewHolder(view: View, var itemScrollData: ItemScrollData) : Re
         }
     }
 
-    fun bindView(item: CustomAdpater.Item) {
+    fun bindView() {
         itemView.item_horizontal_scroll.post{ itemView.item_horizontal_scroll.scrollX = itemScrollData.scrollData.x }
     }
 

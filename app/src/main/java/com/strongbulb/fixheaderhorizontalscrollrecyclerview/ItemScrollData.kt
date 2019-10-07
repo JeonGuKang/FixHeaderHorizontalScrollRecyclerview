@@ -8,18 +8,16 @@ import java.util.*
 class ItemScrollData : Observable() {
     var position : Int = -1
     val scrollData: ScrollData
+
+    data class ScrollData (var x : Int = 0)
+
     init {
         scrollData = ScrollData()
     }
 
-    class ScrollData {
-        var x = 0
-    }
-
     fun onScroll(x: Int) {
         scrollData.x = x
-        setChanged() //Inherited from Observable()
-        notifyObservers(scrollData) //Inherited from Observable()
+        setChanged()
+        notifyObservers(scrollData)
     }
-
 }

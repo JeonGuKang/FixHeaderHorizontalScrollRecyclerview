@@ -10,9 +10,11 @@ class MainActivity : AppCompatActivity() {
 
     val adapter = CustomAdpater()
     val testDataSize = 100
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         initView()
         setTestData()
     }
@@ -34,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun setTestData() {
+    private fun setTestData() {
         val arrayList = arrayListOf<CustomAdpater.Item>()
         for(i in 0 until testDataSize) {
             arrayList.add(CustomAdpater.Item(i))

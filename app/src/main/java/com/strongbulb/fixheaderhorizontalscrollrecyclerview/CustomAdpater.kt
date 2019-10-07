@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 class CustomAdpater : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     val itemScrollData = ItemScrollData()
-    val arrayList = arrayListOf<Item>()
+    private val arrayList = arrayListOf<Item>()
 
     data class Item(val index: Int)
 
@@ -24,7 +24,7 @@ class CustomAdpater : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        (holder as ItemContentViewHolder).bindView(arrayList[position])
+        (holder as ItemContentViewHolder).bindView()
     }
 
     fun setList(arrayList: ArrayList<Item>){

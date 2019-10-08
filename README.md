@@ -15,4 +15,6 @@ Observer를 이용해 구현 했습니다.
 기능을 활성화 하고 싶으시면
 item_content.xml 
 android:overScrollMode="never"
+주석처리 하세요. 
+
 

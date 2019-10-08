@@ -1,4 +1,4 @@
-# FixHeaderHorizontalScrollRecyclerview
+# Fix Header Horizontal Scroll Recyclerview
 
 
 ## 소개

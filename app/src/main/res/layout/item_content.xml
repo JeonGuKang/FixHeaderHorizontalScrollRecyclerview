@@ -49,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="40.7dp"
             android:background="@color/color_fafafa"
+            android:overScrollMode="never"
             android:scrollbars="none">
 
             <LinearLayout

@@ -10,3 +10,9 @@ Observer를 이용해 구현 했습니다.
 
 
 ![](sample.gif)
+
+## OverScroll 제거
+기능을 활성화 하고 싶으시면
+item_content.xml 
+android:overScrollMode="never"
+
